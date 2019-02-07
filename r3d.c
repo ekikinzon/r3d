@@ -247,7 +247,7 @@ void r3d_reduce(r3d_poly *poly, r3d_real *moments, r3d_int polyorder) {
 
 	// flag to translate a polyhedron to the origin for increased accuracy
 	// (this will increase computational cost, in particular for higher moments)
-	r3d_int shift_poly = 1;
+	r3d_int shift_poly = 0;
 
 	if(shift_poly) vc = r3d_poly_center(poly);
 
